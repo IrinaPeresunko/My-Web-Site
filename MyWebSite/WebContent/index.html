@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8" />
+	<title>Снять квартиру,комнату,дом,виллу. Аренда жилья по всему миру</title>
+	<meta name="description" content="Создание адаптивного сайта" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css" />
+	<link rel="stylesheet" href="libs/countdown/jquery.countdown.css" />
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/media.css" />
+</head>
+<body>
+	<header class="top_header">
+		<div class="header_topline">
+			<div class="container">
+				<div class="col-md-12">
+					<div class="row">
+						<button class="auth_buttons hidden-md hidden-lg hidden-sm"><i class="fa fa-user"></i></button>
+						<div class="top_links">
+							<a href="#modal-reg" data-toggle="modal" target="_blank">Регистрация</a> 
+							<a href="#modal-sign_in" data-toggle="modal" target="_blank">Войти</a>
+							<a href="#" target="_blank">Помощь</a>
+							<a href="#callback" class="button fancybox">Сдайте своё жилье</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="col-md-12">
+				<div class="row">
+					<h1> ДОБРО ПОЖАЛОВАТЬ ДОМОЙ </h1>
+				<div class="slider_container">
+					<div class="next_button"><i class="fa fa-angle-right"></i></div>
+					<div class="prev_button"><i class="fa fa-angle-left"></i></div>
+						<div class="carousel">
+						<div class="slide_item"><a class="fancybox" data-fancybox-group="group" href="img/3.jpg"><img src="img/3.jpg" alt="3_image" /></a></div>
+						<div class="slide_item"><a class="fancybox" data-fancybox-group="group" href="img/2.jpg"><img src="img/2.jpg" alt="2_image" /></a></div>
+						<div class="slide_item"><a class="fancybox" data-fancybox-group="group" href="img/6.jpg"><img src="img/6.jpg" alt="6_image" /></a></div>
+						<div class="slide_item"><a class="fancybox" data-fancybox-group="group" href="img/4.jpg"><img src="img/4.jpg" alt="4_image" /></a></div>
+						<div class="slide_item"><a class="fancybox" data-fancybox-group="group" href="img/5.jpg"><img src="img/5.jpg" alt="5_image" /></a></div>
+						<div class="slide_item"><a class="fancybox" data-fancybox-group="group" href="img/7.jpg"><img src="img/7.jpg" alt="7_image" /></a></div>
+						</div>
+					</div> 
+				</div>
+			</div>
+		</div>
+	</header>
+	<div><p></p></div>
+	<div class="container">
+		<div class="panel">
+			<div class="panel-body">
+				<form>
+  					<div class="form-group">
+							<input type="text" class="input-small" name="place" placeholder="Куда вы едите?">
+						
+							<input type="text" class="input-small" name="arrival" placeholder="Прибытие">
+						
+							<input type="text" class="input-small" class="departure" placeholder="Выезд"> 
+						
+					<select>
+ 							 <option>1 гость</option>
+ 							 <option>2 гостя</option>
+ 							 <option>3 гостя</option>
+  							 <option>4 гостя</option>
+  							 <option>5 гостей</option>
+  							 <option>6 гостей</option>
+ 							 <option>7 гостей</option>
+ 							 <option>8 гостей</option>
+  							 <option>9 гостей</option>
+  							 <option>10 гостей</option>
+  							 <option>11 гостей</option>
+  							 <option>12 гостей</option>
+ 							 <option>13 гостей</option>
+ 							 <option>14 гостей</option>
+  							 <option>15 гостей</option>
+  							 <option>16+гостей</option>
+						</select>
+						<button type="submit" class="search_btn">Начать поиск</button>
+					</div>
+ 					
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+			<div class="modal fade" id="modal-reg">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						 <div class="modal-header">
+						 	<button type="button" class="close" data-dismiss="modal">&times;</button>
+						 </div>
+						 <div class="modal-body">
+							<div class="panel panel-default panel-info">
+								<div class="panel-heading">Регистрационная форма</div>
+							<div class="panel-body-reg">
+								<form>
+									<div class="form-group-reg">
+				   						 <label for="name_lb">Имя</label>
+				   						 <input type="name" class="form-control" id="name_lb" placeholder="Имя">
+				 					 </div>
+
+				 					 <div class="form-group-reg">
+				    					<label for="lastName_lb">Фамилия</label>
+				    					<input type="last_name" class="form-control" id="lastName_lb" placeholder="Фамилия">
+				 					 </div>
+
+				  					<div class="form-group-reg">
+				   						 <label for="inputEmail">Адрес электронной почты</label>
+				   						 <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+				 					 </div>
+
+				 					 <div class="form-group-reg">
+				    					<label for="inputPassword">Password</label>
+				    					<input type="password" class="form-control" id="inputPassword" placeholder="Пароль">
+				 					 </div>
+
+				 					 <div class="form-group-reg"><p></p>
+											<label>Дата рождения</label>
+											<input type="text" class="input-small" name="day_birth" placeholder="день">
+										
+											<input type="text" class="input-small" class="month_birth" placeholder="месяц"> 
+
+											<input type="text" class="input-small" class="year_birth" placeholder="год"> 
+									</div>
+								</form>
+						</div>
+									<div class="panel-footer">
+									<div><p></p><button type="submit" class="btn-reg" data-dismiss="modal">Зарегистрироваться</button></div>
+									</div>
+						</div>
+					</div>
+									<div class="modal-footer">
+									 	<p><label>Вы уже на Airbnb?</label>
+										<a href="#modal-sign_in" data-toggle="modal" target="_blank">Войти</a>
+										</p>
+									</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container">
+			<div class="modal fade" id="modal-sign_in">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						 <div class="modal-header">
+						 	<button type="button" class="close" data-dismiss="modal">&times;</button>
+						 </div>
+						 <div class="modal-body">
+							<div class="panel panel-default panel-info">
+											<div class="panel-heading">Вход</div>
+											<div class="panel-body-sign">
+												<form>
+								  					<div class="form-group-sign_in">
+								   						 <label for="inputEmail">Электронная почта</label>
+								   						 <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+								 					 </div>
+
+								 					 <div class="form-group-sign_in">
+								    					<label for="inputPassword">Password</label>
+								    					<input type="password" class="form-control" id="inputPassword" placeholder="Пароль">
+								 					 </div>
+
+								 					 <div class="checkbox">
+								   						<label>
+								      					<input type="checkbox"> Запомнить меня
+								    					</label>
+								 					</div>
+												</form>
+											</div>
+												<div class="panel-footer">
+													<div><p></p><button type="submit" class="sign_btn">Войти</button></div>
+												</div>
+										</div>
+									</div>
+									<div class="modal-footer">
+									 	<p><label>Пока не зарегистрированы на Airbnb?</label>
+											<a href="#modal-reg" data-toggle="modal" target="_blank">Регистрация</a> 
+										</p>
+									</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+	<script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
+	<script src="libs/scrollto/jquery.scrollTo.min.js"></script>
+	<script src="libs/owl-carousel/owl.carousel.min.js"></script>
+	<script src="libs/countdown/jquery.plugin.js"></script>
+	<script src="libs/countdown/jquery.countdown.min.js"></script>
+	<script src="libs/countdown/jquery.countdown-ru.js"></script>
+	<script src="libs/landing-nav/navigation.js"></script>
+	<script src="js/common.js"></script>
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>
