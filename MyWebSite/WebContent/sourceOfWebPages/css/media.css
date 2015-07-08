@@ -45,6 +45,13 @@
 		vertical-align: middle;
 		width: 100%;
 	}
+	#modal-rent_house > div > div > div.modal-body > section > div{
+		padding-left: 25px;
+  		padding-right: 25px;
+  	}
+  	body > div:nth-child(3){
+  		height:200px;
+  	}
 }
 
 /* Extra Small Devices, Phones */

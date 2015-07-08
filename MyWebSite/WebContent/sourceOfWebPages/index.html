@@ -34,7 +34,7 @@
 							<a href="#modal-reg" data-toggle="modal" target="_blank">Регистрация</a> 
 							<a href="#modal-sign_in" data-toggle="modal" target="_blank">Войти</a>
 							<a href="#" target="_blank">Помощь</a>
-							<a href="#callback" class="button fancybox">Сдайте своё жилье</a>
+							<a href="#modal-rent_house" class="button fancybox" data-toggle="modal">Сдайте своё жилье</a>
 						</div>
 					</div>
 				</div>
@@ -65,14 +65,15 @@
 		<div class="panel">
 			<div class="panel-body">
 				<form>
-  					<div class="form-group">
-							<input type="text" class="input-small" name="place" placeholder="Куда вы едите?">
+  						<div class="form-group">
+  							<div class="form-group-item">
+								<input type="text" class="input-small" name="place" placeholder="Куда вы едите?">
+							
+								<input type="text" class="input-small" name="arrival" placeholder="Прибытие">
+							
+								<input type="text" class="input-small" class="departure" placeholder="Выезд"> 
 						
-							<input type="text" class="input-small" name="arrival" placeholder="Прибытие">
-						
-							<input type="text" class="input-small" class="departure" placeholder="Выезд"> 
-						
-					<select>
+						<select class="input-small">
  							 <option>1 гость</option>
  							 <option>2 гостя</option>
  							 <option>3 гостя</option>
@@ -92,7 +93,7 @@
 						</select>
 						<button type="submit" class="search_btn">Начать поиск</button>
 					</div>
- 					
+ 					</div>
 				</form>
 			</div>
 		</div>
@@ -202,6 +203,137 @@
 		</div>
 	</div>
 
+
+	<div class="container_rent">
+			<div class="modal fade" id="modal-rent_house">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						 <div class="modal-header">
+						 	<button type="button" class="close" data-dismiss="modal">&times;</button>
+						 </div>
+						 <div class="modal-body">
+							<div class="panel panel-default panel-info">
+											<div class="panel-heading">Сдайте свое жилье
+											<p>Вы можете зарабатывать с Airbnb, сдавая свое жилье</p></div>
+											<div class="panel-body-sign">
+												<form>
+													<label>Тип жилья</label>
+								  					<p>
+								  						<label class="checkbox-inline" id="typeOfHouse">
+														  <input type="checkbox"  value="option1"> квартира
+													</label>
+													<label class="checkbox-inline" id="typeOfHouse">
+														  <input type="checkbox"  value="option1"> дом
+													</label>
+													<label class="checkbox-inline" id="typeOfHouse">
+														  <input type="checkbox"  value="option1"> общежитие
+													</label>
+													<label class="checkbox-inline" id="typeOfHouse">
+														  <input type="checkbox"  value="option1"> бунгало
+													</label>
+													<label class="checkbox-inline" id="typeOfHouse">
+														  <input type="checkbox"  value="option1"> вилла
+													</label>
+													<label class="checkbox-inline" id="typeOfHouse">
+														  <input type="checkbox"  value="option1"> замок
+													</label>
+													<label class="checkbox-inline" id="typeOfHouse">
+														  <input type="checkbox"  value="option1"> лофт
+													</label>
+													<label class="checkbox-inline" id="typeOfHouse">
+														  <input type="checkbox"  value="option1"> палатка
+													</label>
+												</p>
+													<label>Тип размещения</label>
+								  					<p>
+								  						<label class="checkbox-inline" id="typeOfLocation">
+														  <input type="checkbox"  value="option1">дом/квартира целиком
+													</label>
+													<label class="checkbox-inline" id="typeOfLocation">
+														  <input type="checkbox"  value="option1"> отдельная комната
+													</label>
+													<label class="checkbox-inline" id="typeOfLocation">
+														  <input type="checkbox"  value="option1"> общая комната
+													</label>
+													
+												</p>
+												<label>Вмещает гостей</label>
+								  					<p>
+								  						<select>
+								 							 <option>1 гость</option>
+								 							 <option>2 гостя</option>
+								 							 <option>3 гостя</option>
+								  							 <option>4 гостя</option>
+								  							 <option>5 гостей</option>
+								  							 <option>6 гостей</option>
+								 							 <option>7 гостей</option>
+								 							 <option>8 гостей</option>
+								  							 <option>9 гостей</option>
+								  							 <option>10 гостей</option>
+								  							 <option>11 гостей</option>
+								  							 <option>12 гостей</option>
+								 							 <option>13 гостей</option>
+								 							 <option>14 гостей</option>
+								  							 <option>15 гостей</option>
+								  							 <option>16+гостей</option>
+														</select>
+												</p>
+												<label>Город</label>
+								  					<p>
+								  						 <input type="city" class="form-rent_house" id="inputCity" placeholder="Например,Харьков">
+								  						</p>
+												</form>
+											</div>
+												<div class="panel-footer">
+													<div><p></p><button type="submit" class="btn-rent_house">Сдать жилье</button></div>
+												</div>
+										</div>
+										<section class="rent_items">
+												<div class="container">
+													<div class="row space-5">
+														<div class="col-md-4 text-center">
+															<!-- <i class="icon icon-handshake icon-kazan icon-size-3"></i> -->
+																<h4>Доверие и безопасность</h4>
+																<div class="text-lead text-color-light">
+					          										Наши инструменты защиты и обеспечения безопасности дают вам возможность принимать бронирования только если вы уверены в них на 100%.
+					       										 </div>
+														</div>
+														<div class="col-md-4 text-cener">
+															<!-- <i class="icon icon-host-guarantee icon-kazan icon-size-3"></i> -->
+															<h4>$1&nbsp;000&nbsp;000 Гарантия для хозяев</h4>
+															<div class="text-lead text-color-light">
+          														Ваше спокойствие бесценно, и вы не должны за него платить. Каждое бронирование,соответствующее критериям</a>, защищено Гарантией для хозяев, без дополнительной платы для вас.
+       														 </div>
+														</div>
+														<div class="col-md-4 text-cenetr">
+															<!-- <i class="icon icon-lock icon-kazan icon-size-3"></i> -->
+															<h4>Надежные платежи</h4>
+															<div class="text-lead text-color-light">
+         														 Наша быстрая и гибкая система оплаты позволяет переводить деньги на ваш банковский счет уже спустя 24 часа после прибытия гостя.
+       														 </div>
+														</div>
+													</div>
+												</div>
+											</section>
+											<!-- <i class="icon icon-handshake icon-kazan icon-size-3"></i>
+											<h4>Доверие и безопасность</h4>
+											<div class="text-lead text-color-light">
+          Наши инструменты защиты и обеспечения безопасности дают вам возможность принимать бронирования только если вы уверены в них на 100%.
+        </div> -->
+									</div>
+									<div class="modal-footer">
+									 	<p><label>Пока не зарегистрированы на Airbnb?</label>
+											<a href="#modal-reg" data-toggle="modal" target="_blank">Регистрация</a> 
+										</p>
+										<p><label>Вы уже на Airbnb?</label>
+										<a href="#modal-sign_in" data-toggle="modal" target="_blank">Войти</a>
+										</p>
+									</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>

@@ -15,6 +15,21 @@
 	opacity: 1;
 }
 
+body > div:nth-child(3) > div > div > form > div > div{
+	height:37px;
+	font-family: inherit;
+  font-size: inherit;
+  line-height: 31px;
+  margin: 3px;
+  /*display: table;*/
+}
+/*body > div:nth-child(3) > div > div > form > div > input:nth-child(1){
+	height:37px;
+	font-family: inherit;
+  font-size: inherit;
+  line-height: 31px;
+  margin: 3px;
+}*/
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
 	border:red 3px solid
@@ -59,8 +74,9 @@ body {
     border-radius: 5px;
     color: #fff;
     display: block;
-    padding: 2px 10px;
+    padding: 7px 4px;
     text-align: center;
+    margin:auto;
 }
 #modal-sign_in > div > div > div.modal-body > div > div.panel-footer > div > button{
 	float: initial; 
@@ -69,8 +85,9 @@ body {
     border-radius: 5px;
     color: #fff;
     display: block;
-    padding: 2px 10px;
+    padding: 8px 33px;
     text-align: center;
+    margin:auto;
 }
 .top_links > a.button{
 	float: right; 
@@ -137,18 +154,80 @@ section.order  {
 .panel-body{
 background-color: #43484C;
 }
-.form-group > button.search_btn{
+body > div:nth-child(3) > div > div > form > div > div > button{
   float: none;
   background-color: #5F9EA0;
   border-radius: 10px;
   color: #fff;
   display: table-row-group;
-  padding: 6px 56px;
+  padding: 1px 42px;
 }
 .form-group{
-	padding: 0px 100px;
-	margin-bottom:-3px;
+	vertical-align: middle;
+  	display: table;
+    margin: 2px auto 2px;
+    line-height:31px;
 }
+#modal-rent_house > div > div > div.modal-body > div > div.panel-heading{
+	color: #528B8B;
+	display: block;
+	font-family: "NautilusPompiliusRegular";
+	font-size: 20px;
+	padding: 10px 0;
+	text-align: center;
+}
+#modal-rent_house > div > div > div.modal-body > div > div.panel-footer > div > button{
+    background-color: #5F9EA0;
+    border: medium none;
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    padding: 6px 61px;
+    text-align: center;
+    margin:auto;
+}
+#modal-reg > div > div{
+	display:block;
+	width:80%;
+	line-height:24px;
+	margin:0 auto 12px;
+}
+#modal-sign_in > div > div{
+	display:block;
+	width:80%;
+	line-height:24px;
+	margin:0 auto 12px;
+}
+.rent_items{
+	padding:0px 0px;
+	margin-top:8px;
+}
+/*#modal-rent_house > div > div > div.modal-body > section > div > div > div.col-md-4.text-center > i{
+	font-size: 3.6em;
+	color: #007a87;
+	font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  width:612px;
+  height:52px;
+}*/
+/*#modal-rent_house > div > div > div.modal-body > section > div > div > div.col-md-4.text-cenetr{
+	width: 33.33333%;
+  	float: left;
+}*/
+#modal-rent_house > div > div > div.modal-body > section > div{
+  padding-left: 0px;
+  padding-right: 296px;
+  display:table;
+  text-align:center;
+  color: #778899;
+  display: block;
+  font-family: "RobotoRegular";
+  font-size: 14px;
+}
+/*#modal-rent_house > div > div > div.modal-body > section > div > div{
+	text-align:center;
+}*/
 /*.table-container{
   background-color:#C1CDC1;
   padding: 12px 0px;
