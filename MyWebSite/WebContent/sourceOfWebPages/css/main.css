@@ -14,7 +14,6 @@
 	color: #666;
 	opacity: 1;
 }
-
 body > div:nth-child(3) > div > div > form > div > div{
 	height:37px;
 	font-family: inherit;
@@ -113,6 +112,13 @@ body {
 	padding: 30px 0;
 	text-align: center;
 }*/
+
+/*body > div:nth-child(3) > div > div{
+background-color: #43484C;
+}
+body > div:nth-child(3) > div{
+	background-color: #43484C;
+}*/
 .registration_img{
 	max-width: 100%;
 	position: relative;
@@ -151,9 +157,22 @@ h1{
 section.order  {
 	padding: 25px 0;
 }
-.panel-body{
-background-color: #43484C;
+body > div:nth-child(3) > div > div{
+	background-color: #F5F5F5;
 }
+/*.panel-body{
+background-color: #F5F5F5;
+}*/
+
+/*body > div:nth-child(3) > div > div > form > div{
+	border: #43484C 3px solid;
+
+}*/
+/*body > div:nth-child(3) > div > div > form > div > div > input:nth-child(1){
+	border: green 3px solid;
+
+}*/
+
 body > div:nth-child(3) > div > div > form > div > div > button{
   float: none;
   background-color: #5F9EA0;
@@ -168,6 +187,14 @@ body > div:nth-child(3) > div > div > form > div > div > button{
     margin: 2px auto 2px;
     line-height:31px;
 }
+#modal-help > div > div > div.modal-body > div > div.panel-body-help > form{
+	color: #36648B;
+	display: block;
+	font-family: "RobotoRegular";
+	font-size: 16px;
+	padding: 5px 11;
+	text-align: center;
+}
 #modal-rent_house > div > div > div.modal-body > div > div.panel-heading{
 	color: #528B8B;
 	display: block;
@@ -175,6 +202,9 @@ body > div:nth-child(3) > div > div > form > div > div > button{
 	font-size: 20px;
 	padding: 10px 0;
 	text-align: center;
+}
+#modal-rent_house > div > div > div.modal-body > div > div.panel-body-rent > form{
+	margin: 2px 9px;
 }
 #modal-rent_house > div > div > div.modal-body > div > div.panel-footer > div > button{
     background-color: #5F9EA0;

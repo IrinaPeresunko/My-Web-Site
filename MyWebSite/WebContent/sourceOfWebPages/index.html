@@ -33,7 +33,7 @@
 						<div class="top_links">
 							<a href="#modal-reg" data-toggle="modal" target="_blank">Регистрация</a> 
 							<a href="#modal-sign_in" data-toggle="modal" target="_blank">Войти</a>
-							<a href="#" target="_blank">Помощь</a>
+							<a href="#modal-help" data-toggle="modal" target="_blank">Помощь</a>
 							<a href="#modal-rent_house" class="button fancybox" data-toggle="modal">Сдайте своё жилье</a>
 						</div>
 					</div>
@@ -61,6 +61,68 @@
 		</div>
 	</header>
 	<div><p></p></div>
+	<!-- <div class="search_container">
+		<div class="row">
+			<div class="col-md-5 text-center">
+				<input type="text" class="input-small" name="place" placeholder="Куда вы едите?">
+							
+								<input type="text" class="input-small" name="arrival" placeholder="Прибытие">
+							
+								<input type="text" class="input-small" class="departure" placeholder="Выезд"> 
+						
+						<select class="input-small">
+ 							 <option>1 гость</option>
+ 							 <option>2 гостя</option>
+ 							 <option>3 гостя</option>
+  							 <option>4 гостя</option>
+  							 <option>5 гостей</option>
+  							 <option>6 гостей</option>
+ 							 <option>7 гостей</option>
+ 							 <option>8 гостей</option>
+  							 <option>9 гостей</option>
+  							 <option>10 гостей</option>
+  							 <option>11 гостей</option>
+  							 <option>12 гостей</option>
+ 							 <option>13 гостей</option>
+ 							 <option>14 гостей</option>
+  							 <option>15 гостей</option>
+  							 <option>16+гостей</option>
+						</select>
+						<button type="submit" class="search_btn">Начать поиск</button>
+			</div> -->
+
+
+			<!-- <div class="col-md-5">
+				<input type="text" class="input-small" name="arrival" placeholder="Прибытие">
+			</div>
+			<div class="col-md-5">
+				<input type="text" class="input-small" class="departure" placeholder="Выезд"> 
+			</div>
+			<div class="col-md-5">
+				<select class="input-small">
+ 							 <option>1 гость</option>
+ 							 <option>2 гостя</option>
+ 							 <option>3 гостя</option>
+  							 <option>4 гостя</option>
+  							 <option>5 гостей</option>
+  							 <option>6 гостей</option>
+ 							 <option>7 гостей</option>
+ 							 <option>8 гостей</option>
+  							 <option>9 гостей</option>
+  							 <option>10 гостей</option>
+  							 <option>11 гостей</option>
+  							 <option>12 гостей</option>
+ 							 <option>13 гостей</option>
+ 							 <option>14 гостей</option>
+  							 <option>15 гостей</option>
+  							 <option>16+гостей</option>
+						</select>
+			</div>
+			<div class="col-md-5">
+				<button type="submit" class="search_btn">Начать поиск</button>
+			</div> 
+			</div>
+	</div> -->
 	<div class="container">
 		<div class="panel">
 			<div class="panel-body">
@@ -203,6 +265,47 @@
 		</div>
 	</div>
 
+	<div class="container">
+			<div class="modal fade" id="modal-help">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						 <div class="modal-header">
+						 	<button type="button" class="close" data-dismiss="modal">&times;</button>
+						 </div>
+						 <div class="modal-body">
+							<div class="panel panel-default panel-info">
+											<div class="panel-heading">Помощь</div>
+											<div class="panel-body-help">
+												<form>
+													<p></P>
+								  					<b>Начать поиск</b>
+								  					<p><div>Хозяева из 190 стран мира и 34 000 городов сдают свое жилье на Airbnb. Все, что вам нужно сделать, это ввести местоположение и даты поездки в строке поиска и выбрать подходящее жилье практически в любой точке мира.
+								  					</div></p>
+
+								  					<b>Забронируйте</b>
+								  					<p><div>Есть несколько способов забронировать жилье на Airbnb. Некоторые хозяева хотят узнать о госте больше прежде чем подтверждать запрос, а другие предпочитают экономить время, используя функцию мгновенного бронирования.
+								  					</div></p>
+
+								  					<b>Путешествуйте</b>
+								  					<p><div>Как только вы узнаете, куда едете и где остановитесь, все, что остается сделать — отправиться в путь!
+								  					</div></p>
+												</form>
+											</div>
+							</div>
+						</div>
+									<div class="modal-footer">
+									 	<label>Пока не зарегистрированы на Airbnb?</label>
+											<a href="#modal-reg" data-toggle="modal" target="_blank">Регистрация</a> 
+										<p></p>
+										<label>Вы уже на Airbnb?</label>
+										<a href="#modal-sign_in" data-toggle="modal" target="_blank">Войти</a>
+										
+									</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 
 	<div class="container_rent">
 			<div class="modal fade" id="modal-rent_house">
@@ -215,7 +318,7 @@
 							<div class="panel panel-default panel-info">
 											<div class="panel-heading">Сдайте свое жилье
 											<p>Вы можете зарабатывать с Airbnb, сдавая свое жилье</p></div>
-											<div class="panel-body-sign">
+											<div class="panel-body-rent">
 												<form>
 													<label>Тип жилья</label>
 								  					<p>
@@ -298,14 +401,14 @@
 					          										Наши инструменты защиты и обеспечения безопасности дают вам возможность принимать бронирования только если вы уверены в них на 100%.
 					       										 </div>
 														</div>
-														<div class="col-md-4 text-cener">
+														<div class="col-md-4 text-center">
 															<!-- <i class="icon icon-host-guarantee icon-kazan icon-size-3"></i> -->
 															<h4>$1&nbsp;000&nbsp;000 Гарантия для хозяев</h4>
 															<div class="text-lead text-color-light">
           														Ваше спокойствие бесценно, и вы не должны за него платить. Каждое бронирование,соответствующее критериям</a>, защищено Гарантией для хозяев, без дополнительной платы для вас.
        														 </div>
 														</div>
-														<div class="col-md-4 text-cenetr">
+														<div class="col-md-4 text-center">
 															<!-- <i class="icon icon-lock icon-kazan icon-size-3"></i> -->
 															<h4>Надежные платежи</h4>
 															<div class="text-lead text-color-light">
